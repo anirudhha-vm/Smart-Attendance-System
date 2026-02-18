@@ -2,7 +2,7 @@ import mysql.connector
 from datetime import datetime
 
 # --- CONFIG ---
-DB_PASSWORD = "1Y2E3S4H"  # <--- Make sure this is correct
+DB_PASSWORD = "YOUR_DB_PASSWORD"  # <--- Make sure this is correct
 
 def mark_present(name, subject): # <--- Added 'subject' parameter
     now = datetime.now()

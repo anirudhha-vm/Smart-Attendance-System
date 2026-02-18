@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import main
-import generate_report
+import generate_report  
 
 def start_attendance():
     selected_subject = subject_combobox.get()

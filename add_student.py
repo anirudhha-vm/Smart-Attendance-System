@@ -3,7 +3,7 @@ import mysql.connector
 import os
 
 # --- CONFIGURATION ---
-DB_PASSWORD = "1Y2E3S4H"  
+DB_PASSWORD = "YOUR_DB_PASSWORD"  
 SAVE_FOLDER = "student_images"
 
 # Ensure the folder exists
@@ -51,7 +51,7 @@ def save_to_db(name, roll_no):
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="1Y2E3S4H",
+            password="YOUR_DB_PASSWORD",
             database="attendance_system"
         )
         cursor = conn.cursor()

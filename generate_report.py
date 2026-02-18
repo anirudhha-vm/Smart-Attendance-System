@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # --- CONFIG ---
-DB_PASSWORD = "1Y2E3S4H" 
+DB_PASSWORD = "YOUR_DB_PASSWORD"  # <--- UPDATE THIS!
 
 def export_attendance(subject_filter="All"):
     conn = None
@@ -16,7 +16,7 @@ def export_attendance(subject_filter="All"):
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password= "1Y2E3S4H",
+            password=DB_PASSWORD,
             database="attendance_system"
         )
         
